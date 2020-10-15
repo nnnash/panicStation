@@ -1,0 +1,36 @@
+@import "../../styles/defaults.css";
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.block {
+    border: var(--border);
+    background: var(--background);
+    padding: 0 1em 1em;
+    width: 300px;
+}
+
+.title {
+    border-bottom: 1px solid var(--blue);
+}
+
+.loginOption {
+    display: flex;
+    justify-content: center;
+    padding-top: .8rem;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.loginError {
+    color: var(--red);
+    padding-bottom: 2rem;
+}

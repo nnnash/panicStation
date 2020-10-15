@@ -1,0 +1,26 @@
+:root {
+    --white-rgb: 255, 255, 255;
+    --white: rgb(var(--white-rgb));
+    --grey-rgb: 102, 102, 102;
+    --grey: rgb(var(--grey-rgb));
+    --blue-rgb: 120, 200, 255;
+    --blue: rgb(var(--blue-rgb));
+    --red-rgb: 255, 120, 120;
+    --red: rgb(var(--red-rgb));
+
+    --background: rgba(var(--blue-rgb), .2);
+    --border: 1px solid rgba(var(--blue-rgb), .4);
+
+    --font-size-extra-large: 2.5rem;
+    --font-size-large: 1.8rem;
+    --font-size-medium: 1.6rem;
+    --font-size-small: 1.4rem;
+
+    --s-size: 12px;
+    --m-size: 16px;
+    --l-size: 18px;
+    --xl-size: 40px;
+    --desktop-breakpoint: 45rem;
+
+    --header-height: 60px;
+}

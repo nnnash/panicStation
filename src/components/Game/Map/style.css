@@ -1,0 +1,72 @@
+.map {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-wall {
+    border-top: 4px solid white;
+}
+.top-locked {
+    border-top: 2px dotted white;
+}
+.left-wall {
+    border-left: 4px solid white;
+}
+.left-locked {
+    border-left: 2px dotted white;
+}
+.right-wall {
+    border-right: 4px solid white;
+}
+.right-locked {
+    border-right: 2px dotted white;
+}
+.bottom-wall {
+    border-bottom: 4px solid white;
+}
+.bottom-locked {
+    border-bottom: 2px dotted white;
+}
+
+.roomName {
+    font-weight: bold;
+}
+
+.empty {
+    padding: 20px 10px;
+    color: #595959;
+}
+
+.units {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.unit {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+.white {
+    background-color: white;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+.purple {
+    background-color: purple;
+}

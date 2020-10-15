@@ -1,0 +1,76 @@
+@import "defaults.css";
+@import "../../node_modules/react-toastify/dist/ReactToastify.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #000000 !important;
+    font-family: 'Exo 2', Arial, sans-serif;
+    font-size: var(--m-size);
+    line-height: 1.6;
+    font-weight: 100;
+    color: var(--blue);
+    letter-spacing: 0.06em;
+}
+
+a,
+ol,
+ul,
+dl,
+p {
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: rgba(var(--white-rgb), 0.8);
+    margin: 1px;
+    padding: .4em 1em;
+    border: 1px solid rgba(var(--blue-rgb), .2);
+    background-color: rgba(var(--blue-rgb), .6);
+    &:hover {
+        background-color: rgba(var(--blue-rgb), 0.4);
+        color: rgba(var(--white-rgb), 0.6);
+    }
+    &[disabled] {
+        background-color: rgba(var(--blue-rgb), 0.2);
+        border: 1px solid rgba(var(--blue-rgb), 0.1);
+        color: rgba(var(--white-rgb), 0.3);
+        cursor: default;
+    }
+}
+
+a, a:visited {
+    color: var(--blue);
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+
+    & td {
+        border: 1px solid #3e3e3e;
+        max-width: 33%;
+        min-width: 100px;
+    }
+}
+
+#app {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+    min-height: 100vh;
+}

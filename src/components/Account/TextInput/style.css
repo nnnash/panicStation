@@ -1,0 +1,73 @@
+@import "../../../styles/defaults.css";
+
+.inputGroup {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--m-size);
+
+    @media (min-width: var(--desktop-breakpoint)) {
+        flex-direction: row;
+        margin-bottom: var(--l-size);
+    }
+}
+
+.textInput {
+    background: rgba(var(--blue-rgb), .2);
+    padding: 0.5rem;
+    width: 100%;
+    display: block;
+    border: var(--border);
+    color: var(--blue);
+}
+
+.textInput:focus {
+    border-color: var(--blue);
+    outline: none;
+}
+
+.error {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: shake;
+
+    & .textInput {
+        border-color: var(--red);
+    }
+
+    & .inputFeedback,
+    & .label {
+        color: var(--red);
+    }
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.inputFeedback {
+    margin-top: 0.25rem;
+}
+
+@keyframes shake {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(10px, 0, 0);
+    }
+}

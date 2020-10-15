@@ -1,0 +1,39 @@
+@import "../../../styles/defaults.css";
+
+.header {
+    border-bottom: var(--border);
+    height: var(--header-height);
+    background: var(--background);
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 0 var(--m-size);
+}
+
+.contentLeft {
+    display: flex;
+    align-items: baseline;
+}
+
+.title {
+    text-decoration: none;
+
+    & h1 {
+        margin: 0 1rem 0 0;
+    }
+}
+
+.room {
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
